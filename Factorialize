@@ -1,0 +1,27 @@
+// How to factorialize
+
+// with a for loop
+function factorialize(num) {
+  if (num === 0 || num === 1)
+    return 1;
+  for (var i = num - 1; i >= 1; i--) {
+    num *= i;
+  }
+  return num;
+}
+factorialize(5);
+
+
+// with a while loop
+
+function factorialize(num) {
+  var result = num;
+  if (num === 0 || num === 1) 
+    return 1; 
+  while (num > 1) { 
+    num--;
+    result *= num;
+  }
+  return result;
+}
+factorialize(5);
