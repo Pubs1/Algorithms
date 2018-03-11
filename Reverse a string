@@ -1,0 +1,7 @@
+// How to reverse a string
+
+function reverseString(str) {
+  return str;
+}
+
+reverseString("hello");
