@@ -1,0 +1,15 @@
+function largestOfFour(arr) {
+  var largestArray = [];
+  
+  for(var i = 0; i < arr.length; i++){
+    var largestNumber = 0;
+    for(var j = 0; var j < arr.length; j++){
+      if(largestNumber < arr[i][j]){
+        largestNumber = arr[i][j];
+      }
+    }
+    largestArray.push(largestNumber);
+  }
+  
+  return largestArray;
+}
