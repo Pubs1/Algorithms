@@ -1,0 +1,9 @@
+function confirmEnding(str, target) {
+  var start = str.length - (target.length);
+  //var for just comparing end of string
+  if(str.substr(start, str.length) == target){
+    //compares end of string with the target string
+    return true;
+  }
+  return false;
+}
