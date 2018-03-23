@@ -1,0 +1,11 @@
+function repeatStringNumTimes(str, num) {
+  var arr = [];
+  //Create an empty array to store strings
+  for(var i =0; i < num; i++){
+    arr.push(str);
+  }
+  //Add strings based on how many times requested
+  str = arr.join("");
+  //Turn array of strings into a single string
+  return str;
+}
