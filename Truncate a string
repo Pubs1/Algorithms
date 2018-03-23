@@ -1,0 +1,18 @@
+function truncateString(str, num) {
+  // Clear out that junk in your trunk
+  if(num > 3){
+    if(str.length > num){
+      str = str.slice(0, num-3);
+      //Slice the string 3 short of number
+      str = str.concat("..."); 
+      //Add ... to end of string
+    }
+    return str;
+  } else {
+    str = str.slice(0, num);
+    //Slice string
+    str = str.concat("...");
+    //Concat to end
+  }
+  return str;
+}
