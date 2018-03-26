@@ -1,0 +1,15 @@
+//Splits an array into new arrays the length of the specified size
+
+function chunkArrayInGroups(arr, size) {
+  var newArr = [];
+  //Empty array we will add values to
+  var count = 0;
+  //While loop counter also index counter
+  while(count < arr.length){
+    newArr.push(arr.slice(count,count + size));
+    //Add to newArr values between current index and size
+    count = count + size;
+    //Increase count
+  }
+  return newArr;
+}
