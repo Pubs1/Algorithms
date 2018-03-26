@@ -1,0 +1,19 @@
+function bouncer(arr) {
+  var newArr = [];
+  newArr = arr.filter(removeFalseVar);
+  //Calls filter to run removeFalseVar method
+  return newArr;
+}
+function removeFalseVar(value){
+  return Boolean(value);
+  //Returns values for all non "falsy variables" 
+}  
+
+
+
+
+
+function bouncer(arr) {
+  return arr.filter(Boolean);
+}
+//much more simplified and uses a built in Boolean function
