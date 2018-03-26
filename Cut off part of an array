@@ -1,0 +1,13 @@
+function slasher(arr, howMany) {
+  arr.splice(0, howMany);
+  return arr;
+  // returns everything from the array after the first howMany were cut off
+}
+
+//Another way to do it
+function slasher(arr, howMany) {
+
+  // Return string after the amount chopped off.
+  return arr.slice(howMany);
+
+}
