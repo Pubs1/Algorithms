@@ -1,0 +1,18 @@
+function getIndexToIns(arr, num) {
+  var count = 0;
+  //Counter variable for results
+  for(i = 0; i < arr.length; i++){
+    if(arr[i] - num < 0){
+      //If arr value - number returns negative it's a smaller number
+      count = count+1;
+    }
+  }
+  return count;
+}
+
+
+
+
+
+getIndexToIns([40, 60], 50);
+//Would be 1 
